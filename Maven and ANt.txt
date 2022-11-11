@@ -1,0 +1,15 @@
+First set maven and ant in global tools configuration
+
+MAVEN > maven project > git > Repo Url - https://github.com/be11o/maven-helloworld.git 
+ > build > clean compile package > apply > save > build now
+
+Verify creation of war file - 
+
+
+
+
+ANT
+ANT > freestyle >git > Repo Url > build steps > invoke Ant > ant version - ant > Target - clean compile test package war > apply > save > build now
+
+Verify creation of .war file -
+Cmd as admin > paste path of roshambo.war using dir as prefix
