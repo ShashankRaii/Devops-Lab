@@ -1,0 +1,45 @@
+
+> Download Dockerfile from classroom exp 10 reference material
+> create a folder and move Dockerfile to this folder
+> create index.html here
+<html>
+<head>
+    <title>Welcome Chrisanne</title>
+</head>
+ 
+<body>
+    <h1>Welcome to my website</h1>
+    <h2>Main Categories:</h2>
+    <p>Pages (HTML)</p>
+    <p>Style Sheets</p>
+    <p>Computer Code(Javascript)</p>
+    <p>Live Data</p>
+ 
+</body>
+</html>
+> edit Dockerfile
+FROM ubuntu:latest
+MAINTAINER "Chrisanne Rebello"
+RUN apt update -y
+RUN apt install nginx -y
+EXPOSE 80
+COPY index.html /usr/share/nginx/html/index.html
+COPY index.html /var/www/html/index.html
+CMD ["nginx","-g","daemon off;"]
+
+> in cmd 
+> go to folder 
+>docker –version
+>docker login
+> docker build -t kashyap_image .
+> docker run -it -p 8888:80 kashyap_image 
+
+
+
+
+
+
+
+
+	
+> go to browser & open localhost:8888

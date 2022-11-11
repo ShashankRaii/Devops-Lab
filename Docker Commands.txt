@@ -1,0 +1,21 @@
+-Docker version
+-Docker login
+-docker pull ubuntu
+-docker pull ubuntu:jammy
+-docker images -q
+-docker images -a
+-docker images -f “dangling=false”
+-docker images -f “dangling=true”
+-docker run ubuntu
+-docker ps
+-docker ps -a
+-docker run –name student -it ubuntu bash
+-docker ps
+-docker pause student
+-docker stop student
+-docker stats student
+-docker ps -a
+-docker inspect ubuntu
+-docker -rmi ubuntu
+-docker push ubuntu
+-docker history ubuntu

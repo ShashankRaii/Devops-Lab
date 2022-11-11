@@ -1,0 +1,24 @@
+First, download Ngrok
+In the folder where ngrok is located, open the cmd window
+Here are the commands to type
+Ngrok.exe --version
+Ngrok.exe http 8080
+
+Copy forwarding, up to Ngrok.io
+
+
+> Add webhook
+
+> new pipeline project > Build triggers > GitHub hook trigger for GITScm polling >
+
+
+Script Path >  hello-world/Jenkinsfile
+
+Apply > save 
+
+Forked repository> make changes in Jenkinsfile > commit changes > build now
+
+Add file to forked repository & build  > 
+
+Commit is visible 
+Now using Cron Commands:
